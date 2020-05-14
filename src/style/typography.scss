@@ -3,7 +3,7 @@
 body{
     font-family: bikoregular;
     font-size: 1.25rem;
-    font-size: 20px;
+    font-size: 24px;
     color: $black-brown;
 }
 
@@ -29,10 +29,11 @@ h3{
 }
 
 h4{
-    font-family: bikobold;
+    font-family: bikoregular;
     font-size: 1.875rem;
     font-size: 30px;
     color: $black-brown;
+    text-transform: capitalize;
 }
 
 h5{
@@ -50,6 +51,13 @@ h6{
 }
 
 p{
+    font-family: bikoregular;
+    font-size: 1.25rem;
+    font-size: 20px;
+    color: $black-brown;
+}
+
+a{
     font-family: bikoregular;
     font-size: 1.25rem;
     font-size: 20px;

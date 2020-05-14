@@ -1,8 +1,22 @@
-nav.navbar{
-    padding: 20px 0;
+@import "color.scss";
 
+.navbar{
+    padding: 19px 0;
     .navbar-brand{
         padding: 0;
+    } 
+}
+
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: $black-brown;
+            margin-left: 40px;
+            padding:0;
+            &:hover{
+                color:$turquoise;
+            }
+        }
     }
 }
 

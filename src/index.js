@@ -7,12 +7,16 @@ import "./assets/font/stylesheet.css"
 
 
 import Header from './component/header'
+import Footer from './component/footer'
+import Content from './component/content'
 
 class Welcome extends React.Component {
   render() {
     return (
       <div>
         <Header />
+        <Content />
+        {/* <Footer /> */}
       </div>
     )
   }

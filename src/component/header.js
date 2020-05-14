@@ -5,7 +5,7 @@ import Logo from "../assets/images/Inksie.svg";
 
 const Header = () => (
     <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="navbar-custom" expand="lg">
         <Container>
             <Navbar.Brand>
             <Logo />
