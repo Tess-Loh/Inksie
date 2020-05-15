@@ -5,22 +5,21 @@ import Logo from "../assets/images/Inksie.svg";
 
 const text = 'Bandar Sungai Long 43200 <br>Kajang, Selangor';
 const Footer = () => (
-    <div>
+    <section className="footer">
         <Container>
-            <Row>
+            <Row >
                 <Col lg={6}>
                     <p>Bandar Sungai Long<br />43200 Kajang, Selangor.<br />+06-1782029324<br />inksie@outlook.com</p>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="inksie-logo">
                     <Logo />
                 </Col>
                 <Col lg={12}>
-                    <p>Copyright@2020 Inksie</p>
+                    <p className="copyright">Copyright@2020 Inksie</p>
                 </Col>
             </Row>
         </Container>
-       
-    </div>
+    </section>
 )
 
 export default Footer;

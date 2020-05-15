@@ -1,40 +1,38 @@
 @import "color.scss";
 
-
-
 .hill-img{
     position: relative;
     left: -50px;
 }
 
 .hero-banner{
-    padding-bottom: 0;
-    .hero-banner-bg{
-        background-color: $beige;
-        padding: 40px 0;
-        margin:0;
-        .hero-banner-item{
-            display: flex;
-            align-items: center;
-        }
+    background-color: $beige;
+    padding: 40px 0;
+    .hero-banner-item{
+        display: flex;
+        align-items: center;
     }
-}
-
-.top-padding{
-    padding-top:60px;
 }
 
 .inksie-explanation{
     background-image: linear-gradient($white, $beige);
+    .bark-item{
+        display: flex;
+        align-items: center;   
+    }
+    .etsy-img{
+        margin-bottom: 25px;
+    }
 }
 
-.jumbotron{
-    padding:0;
-    margin:0;
-}
+
 
 .clients-bg{
     background: $light-brown;
+}
+
+section{
+    padding: 60px 0;
 }
 
 .center-items{
@@ -43,9 +41,19 @@
     text-align: center;
 }
 
+.no-padding-top{
+    padding-top:0;
+}
 
+.padding-bottom{
+    padding-bottom: 60px;
+}
 
-// img{
-//     width: 100%;
-// }
+.padding-top{
+    padding-top: 60px;
+}
+
+.padding-bottom-xs{
+    padding-bottom: 30px;
+}
 

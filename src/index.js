@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style/main.scss";
 import "./assets/font/stylesheet.css"
@@ -16,7 +17,7 @@ class Welcome extends React.Component {
       <div>
         <Header />
         <Content />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     )
   }
