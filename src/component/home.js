@@ -30,7 +30,7 @@ class Home extends React.Component {
                         <Row className="hero-banner-item">
                             <Col lg={6} >
                                 <h2>Calligraphy Ink Holder</h2>
-                                <h4>You can't top an exclusive design</h4>
+                                <h4>You Can't Top An Exclusive Design</h4>
                                 <Button className="custom-btn shadow-none">Buy Now!</Button>
                             </Col>
                             <Col lg={6} className="hill-img">
@@ -99,7 +99,7 @@ class Home extends React.Component {
                 <section className="clients-bg">
                     <Row className="center-items">
                         <Col lg={12}>
-                            <h3>Clients</h3>
+                            <h2>Clients</h2>
                         </Col>
                         <Col lg={3}>
                             <Image src= {stickerrific} />

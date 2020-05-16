@@ -25,11 +25,45 @@
     }
 }
 
-
-
 .clients-bg{
     background: $light-brown;
 }
+
+.img-responsive{
+    width: 100%;
+}
+
+.about-us-section{
+    background: $light-brown;
+}
+
+.creation-process{
+    .creation-process-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ink-txt-card{
+        padding-left: 110px;
+    }
+}
+
+.contact{
+    background: $turquoise;
+    .contact-section{
+        .contact-details{
+            color: $white;
+            h2, h4{
+                padding-top:18px;
+                color: $white;
+            }
+            span{
+                font-size: 75px;
+            }
+        }
+    }
+}
+
 
 section{
     padding: 60px 0;
@@ -39,6 +73,10 @@ section{
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.no-padding{
+    padding: 0;
 }
 
 .no-padding-top{

@@ -14,7 +14,10 @@
             margin-left: 40px;
             padding:0;
             text-decoration: none;
-            &:hover{
+            &:hover, &:focus, &:active{
+                color:$turquoise;
+            }
+            &.active{
                 color:$turquoise;
             }
         }
