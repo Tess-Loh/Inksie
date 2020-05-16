@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Row, Navbar, Nav, NavItem, NavDropdown} from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
 import Logo from "../assets/images/Inksie.svg";
 
 
@@ -8,14 +9,14 @@ const Header = () => (
         <Navbar bg="navbar-custom" expand="lg">
         <Container>
             <Navbar.Brand>
-            <Logo />
+                <NavLink to="/"><Logo /></NavLink>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="navbar-right">
                 <Nav className="ml-auto">
-                <Nav.Link href="#home">Shop</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <NavLink to="#shop">Shop</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Container>

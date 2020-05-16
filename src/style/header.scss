@@ -9,10 +9,11 @@
 
 .navbar-light{
     .navbar-nav{
-        .nav-link{
+        a{
             color: $black-brown;
             margin-left: 40px;
             padding:0;
+            text-decoration: none;
             &:hover{
                 color:$turquoise;
             }
