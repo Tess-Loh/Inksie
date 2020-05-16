@@ -17,6 +17,7 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.2.0",
+    "react-scroll-up-button": "^1.6.4",
     "react-svg-loader": "^3.0.3"
   },
   "devDependencies": {

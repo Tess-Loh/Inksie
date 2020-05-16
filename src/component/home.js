@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col, Navbar, Nav, NavItem, NavDropdown, Jumbotron, Button, Image} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import brushes from "../assets/images/brushes.png";
 import inkHolder from "../assets/images/ink-holder.png";
 import bark from "../assets/images/bark.png";
@@ -21,6 +21,10 @@ class Home extends React.Component {
     
         return(
             <div>
+                <ScrollUpButton  ContainerClassName="over-ride-scroll-bt icon-arrow_upward" TransitionClassName="over-ride-transition-bt"/>
+                {/* <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
+                    <p>tester</p>
+                </ScrollUpButton> */}
                 <section className="hero-banner">
                     <Container>
                         <Row className="hero-banner-item">

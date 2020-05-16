@@ -32,9 +32,9 @@ module.exports = {
           ],
         },
         {
-          test: /\.(woff|woff2)$/,
+          test: /\.(woff|woff2|eot|ttf)$/,
           use: {
-            loader: 'url-loader',
+            loader: 'url-loader?limit=100000',
           },
         },
         {
