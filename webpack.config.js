@@ -6,6 +6,7 @@ module.exports = {
       filename: 'bundle.js'
     },
     devServer: {
+      historyApiFallback: true,
       contentBase: './',
       publicPath: '/dist/'
     },
