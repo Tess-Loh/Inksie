@@ -1,16 +1,28 @@
 import React from "react";
 import {Container, Row, Col, Navbar, Nav, NavItem, NavDropdown, Jumbotron, Button, Image} from "react-bootstrap";
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import brushes from "../assets/images/brushes.png";
 import inkHolder from "../assets/images/ink-holder.png";
 import bark from "../assets/images/bark.png";
-import etsy from "../assets/images/etsy.png";
+import Etsy from "../assets/images/etsy.svg";
 import stickerrific from "../assets/images/stickerrific.png";
 import cziplee from "../assets/images/czip50.png";
 import artFriend from "../assets/images/artfriend.png";
 import hill from "../assets/images/man-hill.png";
 
 class Home extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    componentDidMount(){
+        AOS.init({
+          duration : 800
+        })
+    }
+    
     render(){
         const circleColors = ["#DFF3F4","#54744B","#250A00","#D54635"];
         const circlesToRender = circleColors.map((data,i) => (
@@ -24,9 +36,6 @@ class Home extends React.Component {
                 <ScrollUpButton  ContainerClassName="over-ride-scroll-bt icon-arrow_upward" TransitionClassName="over-ride-transition-bt"
                 EasingType='easeOutCubic'
                 AnimationDuration={1000}/>
-                {/* <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
-                    <p>tester</p>
-                </ScrollUpButton> */}
                 <section className="hero-banner">
                     <Container>
                         <Row className="hero-banner-item">
@@ -46,12 +55,12 @@ class Home extends React.Component {
                     <Container>
                         <Row className="center-items">
                             <Col lg={12}>
-                                <Image src= {brushes} width='80%' className="padding-bottom-xs"/>
+                                <Image src= {brushes} width='80%' className="padding-bottom-xs" data-aos='fade-down'/>
                             </Col>
                             <Col lg={12}>
-                                <Image src= {inkHolder} className="padding-bottom" />
+                                <Image src= {inkHolder} className="padding-bottom" data-aos='fade-up'/>
                             </Col>
-                            <Col lg={10}>
+                            <Col lg={10} data-aos='fade-up'>
                                 <h1>Quality Product <br /> that Inspires Creative Flow</h1>
                                 <p className="big-text">Creative spirits require tools that gets their creative juices flowing. 
                                     Inksie’s ink holder was tailored made for your workflow to be more efficient and streamlined.
@@ -68,7 +77,7 @@ class Home extends React.Component {
                 <section className="inksie-explanation">
                     <Container>
                         <Row>
-                            <Col lg={6} >
+                            <Col lg={6} data-aos="fade-up-right">
                                 {circlesToRender}
                             </Col>
                             <Col lg={6}>
@@ -84,12 +93,13 @@ class Home extends React.Component {
                                     it will be an eye-catching staple on your desk for years to come. </p>
                             </Col>
                             <Col lg={6}>
-                                <Image src= {bark} className="padding-bottom padding-top"/>
+                                <Image src= {bark} className="padding-bottom padding-top" data-aos="fade-up-left"/>
                             </Col>
                         </Row>
-                        <Row className="center-items">
-                            <Col lg={12}>
-                                <Image src= {etsy} className="etsy-img padding-top" />
+                        <Row className="center-items" data-aos="fade-up">
+                            <Col lg={12} >
+                                <Etsy className="etsy-img"/>
+                                <etsy />
                                 <h5>Inksie Available in Etsy</h5>
                                 <Button className="custom-btn shadow-none">Buy Now</Button>
                             </Col>
@@ -99,7 +109,7 @@ class Home extends React.Component {
                 
     
                 <section className="clients-bg">
-                    <Row className="center-items">
+                    <Row className="center-items" data-aos="fade-up">
                         <Col lg={12}>
                             <h2>Clients</h2>
                         </Col>

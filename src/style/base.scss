@@ -23,6 +23,12 @@
     }
     .etsy-img{
         margin-bottom: 25px;
+        rect{
+            -webkit-box-shadow: 0px 3px 6px rgb(0,0,0, 0.16);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    0px 3px 6px rgb(0,0,0, 0.16);  /* Firefox 3.5 - 3.6 */
+            box-shadow:         0px 3px 6px rgb(0,0,0, 0.16);  
+        }
+        
     }
 }
 
@@ -38,14 +44,22 @@
 }
 
 .creation-process{
+    
     .creation-process-item{
+        overflow: hidden;
+        max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin:0;
+        &.blue{
+            background: $light-blue;
+        }
     }
     .ink-txt-card{
         padding-left: 110px;
     }
+
 }
 
 //Contact
@@ -95,10 +109,37 @@
 } 
 
 
+// //Shop
+// .full-height{
+//     min-height:100%;
+//     background-color: red;
+// }
+
 //General Styling
 section{
     padding: 60px 0;
 }
+
+html, body, #app+div{
+    height: 100%;
+}
+
+// #app > div{
+//     //height: 100vh;
+//     background-color: red;
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
+
+.site-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    max-height: 100vh;
+}
+
+
 
 .img-responsive{
     width: 100%;

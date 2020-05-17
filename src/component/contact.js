@@ -21,7 +21,7 @@ class Contact extends React.Component {
 
     render(){
         return(
-            <div className="contact">
+            <div className="contact site-content">
                 <section className="contact-section">
                     <Container>
                         <Row className="contact-details center-items">
