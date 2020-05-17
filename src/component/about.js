@@ -15,7 +15,6 @@ const About = () =>(
                 </Row>
             </Container>
         </section>
-
         <section className="creation-process no-padding">
                 <Row className="creation-process-item">
                     <Col lg={6} className="ink-txt-card">
@@ -42,8 +41,7 @@ const About = () =>(
                         <Image src= {inkHolders} className= "img-responsive"/>
                     </Col>
                 </Row>
-        </section>
-                     
+        </section>       
     </div>
 )
 

@@ -17,10 +17,7 @@ class Contact extends React.Component {
 
     mouseOut(e) {
         this.setState({copied: false})
-      }
-
-
-
+    }
 
     render(){
         return(
@@ -48,7 +45,6 @@ class Contact extends React.Component {
                                     {this.state.copied ? <span className="tooltip-onClick">Inksie's email address has been copied to you clipboard</span> : null}
                                 </div>
                             </Col>
-                            
                             <Col lg={6}>
                                 <a href="tel:06-1782029324" className="phone-details">
                                     <span className="icon-phone"></span>
@@ -56,11 +52,6 @@ class Contact extends React.Component {
                                 </a>
                                 
                             </Col>
-                            
-
-
-
-
                         </Row>
                     </Container>
                 </section>

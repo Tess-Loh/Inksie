@@ -1,5 +1,7 @@
 @import "color.scss";
 
+
+//Homepage
 .hill-img{
     position: relative;
     left: -50px;
@@ -29,10 +31,9 @@
     background: $light-brown;
 }
 
-.img-responsive{
-    width: 100%;
-}
 
+
+//About
 .about-us-section{
     background: $light-brown;
 }
@@ -48,6 +49,7 @@
     }
 }
 
+//Contact
 .contact{
     background: $turquoise;
     .contact-section{
@@ -94,12 +96,14 @@
 } 
 
 
+//General Styling
 section{
     padding: 60px 0;
 }
 
-
-
+.img-responsive{
+    width: 100%;
+}
 
 .center-items{
     display: flex;
