@@ -49,9 +49,9 @@ class Home extends React.Component {
                             <Col lg={12}>
                                 <Image src= {inkHolder} className="padding-bottom" />
                             </Col>
-                            <Col lg={8}>
-                                <h1>Quality Product that Inspires Creative Flow</h1>
-                                <p>Creative spirits require tools that gets their creative juices flowing. 
+                            <Col lg={10}>
+                                <h1>Quality Product <br /> that Inspires Creative Flow</h1>
+                                <p className="big-text">Creative spirits require tools that gets their creative juices flowing. 
                                     Inksie’s ink holder was tailored made for your workflow to be more efficient and streamlined.
                                     Built from quality material that is not only durable but also eye candy for your desk. </p>
                             </Col>

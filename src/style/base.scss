@@ -58,16 +58,48 @@
                 color: $white;
             }
             span{
-                font-size: 75px;
+                &.icon-email, &.icon-phone{
+                    font-size: 75px;
+                }
+            }
+            .email-details{
+                cursor: pointer; 
+                &:hover, &:focus, &:active{
+                    color: darken($white, 10%) !important;
+                }  
+            }
+            a{
+                &.phone-details{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+
+            }
+            .icon-phone{
+                    color: $white;
+                }
             }
         }
     }
-}
+
+.tool-tip{
+    margin-top: 18px;
+    .tooltip-onClick{
+        font-size: 16px;
+        background: $black-brown;
+        border-radius: 10px;
+        padding: 12px;
+    }
+} 
 
 
 section{
     padding: 60px 0;
 }
+
+
+
 
 .center-items{
     display: flex;

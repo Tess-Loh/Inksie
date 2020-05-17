@@ -10,7 +10,7 @@ const About = () =>(
                 <Row className="center-items">
                     <Col lg={10}>
                         <h2>About Us</h2>
-                        <h4>Inksie is dedicated in handcrafting each and every ink holder with quality Balau wood, rejecting the pressure of mass production.</h4>
+                        <p className="big-text">Inksie is dedicated in handcrafting each and every ink holder with quality Balau wood, rejecting the pressure of mass production.</p>
                     </Col>
                 </Row>
             </Container>
