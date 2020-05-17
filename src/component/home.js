@@ -21,7 +21,9 @@ class Home extends React.Component {
     
         return(
             <div>
-                <ScrollUpButton  ContainerClassName="over-ride-scroll-bt icon-arrow_upward" TransitionClassName="over-ride-transition-bt"/>
+                <ScrollUpButton  ContainerClassName="over-ride-scroll-bt icon-arrow_upward" TransitionClassName="over-ride-transition-bt"
+                EasingType='easeOutCubic'
+                AnimationDuration={1000}/>
                 {/* <ScrollUpButton ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled">
                     <p>tester</p>
                 </ScrollUpButton> */}

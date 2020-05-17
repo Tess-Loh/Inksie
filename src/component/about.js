@@ -1,10 +1,14 @@
 import React from "react";
 import {Container, Row, Col, Navbar, Nav, NavItem, NavDropdown, Jumbotron, Button, Image} from "react-bootstrap";
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import material from "../assets/images/wood-material.jpg"
 import inkHolders from "../assets/images/ink-holders.jpg"
 
 const About = () =>(
     <div>
+        <ScrollUpButton  ContainerClassName="over-ride-scroll-bt icon-arrow_upward" TransitionClassName="over-ride-transition-bt"
+                EasingType='easeOutCubic'
+                AnimationDuration={1000}/>
         <section className="about-us-section">
             <Container>
                 <Row className="center-items">
